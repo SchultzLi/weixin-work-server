@@ -1,0 +1,271 @@
+[2020-04-08T11:06:27.938] [ERROR] kis - { Error: ENOENT: no such file or directory, open 'E:\webapp-2019\weixin-server\src\server\views\weixin-work-setting.html'
+  errno: -4058,
+  code: 'ENOENT',
+  syscall: 'open',
+  path: 'E:\\webapp-2019\\weixin-server\\src\\server\\views\\weixin-work-setting.html' }
+[2020-04-08T13:44:59.731] [ERROR] kis - TypeError: Cannot read property 'params' of undefined
+    at Promise (E:\webapp-2019\weixin-server\src\server\utils\ApiRequest.js:15:19)
+    at new Promise (<anonymous>)
+    at ApiRequest.fetch (E:\webapp-2019\weixin-server\src\server\utils\ApiRequest.js:8:12)
+    at WeixinWorkModel.getAccessToken (E:\webapp-2019\weixin-server\src\server\models\WeixinWorkModel.js:13:16)
+    at E:\webapp-2019\weixin-server\src\server\controllers\WeixinWorkController.js:21:41
+    at dispatch (E:\webapp-2019\weixin-server\node_modules\koa-simple-router\index.js:186:18)
+    at Router._lookup (E:\webapp-2019\weixin-server\node_modules\koa-simple-router\index.js:198:12)
+    at E:\webapp-2019\weixin-server\node_modules\koa-simple-router\index.js:138:21
+    at dispatch (E:\webapp-2019\weixin-server\node_modules\koa-compose\index.js:42:32)
+    at app.use (E:\webapp-2019\weixin-server\src\server\middlewares\errorHandler.js:15:13)
+[2020-04-08T16:32:28.941] [ERROR] kis - TypeError: WeixinWorkCorp.setCorp is not a function
+    at E:\webapp-2019\weixin-server\src\server\controllers\WeixinWorkController.js:75:22
+    at dispatch (E:\webapp-2019\weixin-server\node_modules\koa-simple-router\index.js:186:18)
+    at Router._lookup (E:\webapp-2019\weixin-server\node_modules\koa-simple-router\index.js:198:12)
+    at E:\webapp-2019\weixin-server\node_modules\koa-simple-router\index.js:138:21
+    at dispatch (E:\webapp-2019\weixin-server\node_modules\koa-compose\index.js:42:32)
+    at app.use (E:\webapp-2019\weixin-server\src\server\middlewares\errorHandler.js:15:13)
+    at dispatch (E:\webapp-2019\weixin-server\node_modules\koa-compose\index.js:42:32)
+    at app.use (E:\webapp-2019\weixin-server\src\server\middlewares\errorHandler.js:6:15)
+    at dispatch (E:\webapp-2019\weixin-server\node_modules\koa-compose\index.js:42:32)
+    at bodyParser (E:\webapp-2019\weixin-server\node_modules\koa-bodyparser\index.js:95:11)
+    at <anonymous>
+    at process._tickCallback (internal/process/next_tick.js:188:7)
+[2020-04-08T16:44:22.260] [ERROR] kis - { SequelizeDatabaseError: Operand type clash: bigint is incompatible with datetimeoffset
+    at Query.formatError (E:\webapp-2019\weixin-server\node_modules\sequelize\lib\dialects\mssql\query.js:314:12)
+    at Request.connection.lib.Request [as userCallback] (E:\webapp-2019\weixin-server\node_modules\sequelize\lib\dialects\mssql\query.js:74:23)
+    at Request.callback (E:\webapp-2019\weixin-server\node_modules\tedious\lib\request.js:56:14)
+    at Connection.endOfMessageMarkerReceived (E:\webapp-2019\weixin-server\node_modules\tedious\lib\connection.js:2397:20)
+    at Connection.dispatchEvent (E:\webapp-2019\weixin-server\node_modules\tedious\lib\connection.js:1282:15)
+    at Parser.tokenStreamParser.on (E:\webapp-2019\weixin-server\node_modules\tedious\lib\connection.js:1075:14)
+    at emitOne (events.js:116:13)
+    at Parser.emit (events.js:211:7)
+    at Parser.parser.on.token (E:\webapp-2019\weixin-server\node_modules\tedious\lib\token\token-stream-parser.js:37:14)
+    at emitOne (events.js:116:13)
+    at Parser.emit (events.js:211:7)
+    at addChunk (E:\webapp-2019\weixin-server\node_modules\readable-stream\lib\_stream_readable.js:298:12)
+    at readableAddChunk (E:\webapp-2019\weixin-server\node_modules\readable-stream\lib\_stream_readable.js:280:11)
+    at Parser.Readable.push (E:\webapp-2019\weixin-server\node_modules\readable-stream\lib\_stream_readable.js:241:10)
+    at Parser.Transform.push (E:\webapp-2019\weixin-server\node_modules\readable-stream\lib\_stream_transform.js:139:32)
+    at Parser.afterTransform (E:\webapp-2019\weixin-server\node_modules\readable-stream\lib\_stream_transform.js:88:10)
+    at Parser._transform (E:\webapp-2019\weixin-server\node_modules\tedious\lib\token\stream-parser.js:88:14)
+    at Parser.Transform._read (E:\webapp-2019\weixin-server\node_modules\readable-stream\lib\_stream_transform.js:177:10)
+    at Parser.Transform._write (E:\webapp-2019\weixin-server\node_modules\readable-stream\lib\_stream_transform.js:164:83)
+    at doWrite (E:\webapp-2019\weixin-server\node_modules\readable-stream\lib\_stream_writable.js:409:139)
+    at writeOrBuffer (E:\webapp-2019\weixin-server\node_modules\readable-stream\lib\_stream_writable.js:398:5)
+    at Parser.Writable.write (E:\webapp-2019\weixin-server\node_modules\readable-stream\lib\_stream_writable.js:307:11)
+  name: 'SequelizeDatabaseError',
+  parent: 
+   { RequestError: Operand type clash: bigint is incompatible with datetimeoffset
+    at Parser.tokenStreamParser.on.token (E:\webapp-2019\weixin-server\node_modules\tedious\lib\connection.js:842:27)
+    at emitOne (events.js:116:13)
+    at Parser.emit (events.js:211:7)
+    at Parser.parser.on.token (E:\webapp-2019\weixin-server\node_modules\tedious\lib\token\token-stream-parser.js:37:14)
+    at emitOne (events.js:116:13)
+    at Parser.emit (events.js:211:7)
+    at addChunk (E:\webapp-2019\weixin-server\node_modules\readable-stream\lib\_stream_readable.js:298:12)
+    at readableAddChunk (E:\webapp-2019\weixin-server\node_modules\readable-stream\lib\_stream_readable.js:280:11)
+    at Parser.Readable.push (E:\webapp-2019\weixin-server\node_modules\readable-stream\lib\_stream_readable.js:241:10)
+    at Parser.Transform.push (E:\webapp-2019\weixin-server\node_modules\readable-stream\lib\_stream_transform.js:139:32)
+    at doneParsing (E:\webapp-2019\weixin-server\node_modules\tedious\lib\token\stream-parser.js:122:14)
+    at data (E:\webapp-2019\weixin-server\node_modules\tedious\lib\token\infoerror-token-parser.js:48:5)
+    at call.lineNumber (E:\webapp-2019\weixin-server\node_modules\tedious\lib\token\infoerror-token-parser.js:21:19)
+    at awaitData (E:\webapp-2019\weixin-server\node_modules\tedious\lib\token\stream-parser.js:221:7)
+    at Parser.awaitData (E:\webapp-2019\weixin-server\node_modules\tedious\lib\token\stream-parser.js:145:7)
+    at Parser.readUInt32LE (E:\webapp-2019\weixin-server\node_modules\tedious\lib\token\stream-parser.js:218:10)
+    at parser.readBVarChar.procName (E:\webapp-2019\weixin-server\node_modules\tedious\lib\token\infoerror-token-parser.js:20:90)
+    at readBuffer.data (E:\webapp-2019\weixin-server\node_modules\tedious\lib\token\stream-parser.js:379:9)
+    at awaitData (E:\webapp-2019\weixin-server\node_modules\tedious\lib\token\stream-parser.js:371:7)
+    at Parser.awaitData (E:\webapp-2019\weixin-server\node_modules\tedious\lib\token\stream-parser.js:145:7)
+    at Parser.readBuffer (E:\webapp-2019\weixin-server\node_modules\tedious\lib\token\stream-parser.js:368:10)
+    at readUInt8.length (E:\webapp-2019\weixin-server\node_modules\tedious\lib\token\stream-parser.js:378:12)
+     message: 'Operand type clash: bigint is incompatible with datetimeoffset',
+     code: 'EREQUEST',
+     number: 206,
+     state: 2,
+     class: 16,
+     serverName: 'QSC1701-0009',
+     procName: '',
+     lineNumber: 1,
+     sql: 'INSERT INTO [userinfo] ([id],[corpid],[coprsecret],[access_token],[access_token_expire],[jsapi_ticket],[jsapi_ticket_expire],[createdAt],[updatedAt]) OUTPUT INSERTED.* VALUES (@0,@1,@2,@3,@4,@5,@6,@7,@8);',
+     parameters: 
+      { '0': 1,
+        '1': 'dfsdfafda',
+        '2': 'sdfsadfsa',
+        '3': 'kjkij',
+        '4': 1586335462214,
+        '5': 'ksdfjksljkj',
+        '6': 1586335462214,
+        '7': '2020-04-08 08:44:22.216 +00:00',
+        '8': '2020-04-08 08:44:22.216 +00:00' } },
+  original: 
+   { RequestError: Operand type clash: bigint is incompatible with datetimeoffset
+    at Parser.tokenStreamParser.on.token (E:\webapp-2019\weixin-server\node_modules\tedious\lib\connection.js:842:27)
+    at emitOne (events.js:116:13)
+    at Parser.emit (events.js:211:7)
+    at Parser.parser.on.token (E:\webapp-2019\weixin-server\node_modules\tedious\lib\token\token-stream-parser.js:37:14)
+    at emitOne (events.js:116:13)
+    at Parser.emit (events.js:211:7)
+    at addChunk (E:\webapp-2019\weixin-server\node_modules\readable-stream\lib\_stream_readable.js:298:12)
+    at readableAddChunk (E:\webapp-2019\weixin-server\node_modules\readable-stream\lib\_stream_readable.js:280:11)
+    at Parser.Readable.push (E:\webapp-2019\weixin-server\node_modules\readable-stream\lib\_stream_readable.js:241:10)
+    at Parser.Transform.push (E:\webapp-2019\weixin-server\node_modules\readable-stream\lib\_stream_transform.js:139:32)
+    at doneParsing (E:\webapp-2019\weixin-server\node_modules\tedious\lib\token\stream-parser.js:122:14)
+    at data (E:\webapp-2019\weixin-server\node_modules\tedious\lib\token\infoerror-token-parser.js:48:5)
+    at call.lineNumber (E:\webapp-2019\weixin-server\node_modules\tedious\lib\token\infoerror-token-parser.js:21:19)
+    at awaitData (E:\webapp-2019\weixin-server\node_modules\tedious\lib\token\stream-parser.js:221:7)
+    at Parser.awaitData (E:\webapp-2019\weixin-server\node_modules\tedious\lib\token\stream-parser.js:145:7)
+    at Parser.readUInt32LE (E:\webapp-2019\weixin-server\node_modules\tedious\lib\token\stream-parser.js:218:10)
+    at parser.readBVarChar.procName (E:\webapp-2019\weixin-server\node_modules\tedious\lib\token\infoerror-token-parser.js:20:90)
+    at readBuffer.data (E:\webapp-2019\weixin-server\node_modules\tedious\lib\token\stream-parser.js:379:9)
+    at awaitData (E:\webapp-2019\weixin-server\node_modules\tedious\lib\token\stream-parser.js:371:7)
+    at Parser.awaitData (E:\webapp-2019\weixin-server\node_modules\tedious\lib\token\stream-parser.js:145:7)
+    at Parser.readBuffer (E:\webapp-2019\weixin-server\node_modules\tedious\lib\token\stream-parser.js:368:10)
+    at readUInt8.length (E:\webapp-2019\weixin-server\node_modules\tedious\lib\token\stream-parser.js:378:12)
+     message: 'Operand type clash: bigint is incompatible with datetimeoffset',
+     code: 'EREQUEST',
+     number: 206,
+     state: 2,
+     class: 16,
+     serverName: 'QSC1701-0009',
+     procName: '',
+     lineNumber: 1,
+     sql: 'INSERT INTO [userinfo] ([id],[corpid],[coprsecret],[access_token],[access_token_expire],[jsapi_ticket],[jsapi_ticket_expire],[createdAt],[updatedAt]) OUTPUT INSERTED.* VALUES (@0,@1,@2,@3,@4,@5,@6,@7,@8);',
+     parameters: 
+      { '0': 1,
+        '1': 'dfsdfafda',
+        '2': 'sdfsadfsa',
+        '3': 'kjkij',
+        '4': 1586335462214,
+        '5': 'ksdfjksljkj',
+        '6': 1586335462214,
+        '7': '2020-04-08 08:44:22.216 +00:00',
+        '8': '2020-04-08 08:44:22.216 +00:00' } },
+  sql: 'INSERT INTO [userinfo] ([id],[corpid],[coprsecret],[access_token],[access_token_expire],[jsapi_ticket],[jsapi_ticket_expire],[createdAt],[updatedAt]) OUTPUT INSERTED.* VALUES (@0,@1,@2,@3,@4,@5,@6,@7,@8);',
+  parameters: 
+   { '0': 1,
+     '1': 'dfsdfafda',
+     '2': 'sdfsadfsa',
+     '3': 'kjkij',
+     '4': 1586335462214,
+     '5': 'ksdfjksljkj',
+     '6': 1586335462214,
+     '7': '2020-04-08 08:44:22.216 +00:00',
+     '8': '2020-04-08 08:44:22.216 +00:00' } }
+[2020-04-08T16:46:25.213] [ERROR] kis - { SequelizeDatabaseError: Conversion failed when converting date and/or time from character string.
+    at Query.formatError (E:\webapp-2019\weixin-server\node_modules\sequelize\lib\dialects\mssql\query.js:314:12)
+    at Request.connection.lib.Request [as userCallback] (E:\webapp-2019\weixin-server\node_modules\sequelize\lib\dialects\mssql\query.js:74:23)
+    at Request.callback (E:\webapp-2019\weixin-server\node_modules\tedious\lib\request.js:56:14)
+    at Connection.endOfMessageMarkerReceived (E:\webapp-2019\weixin-server\node_modules\tedious\lib\connection.js:2397:20)
+    at Connection.dispatchEvent (E:\webapp-2019\weixin-server\node_modules\tedious\lib\connection.js:1282:15)
+    at Parser.tokenStreamParser.on (E:\webapp-2019\weixin-server\node_modules\tedious\lib\connection.js:1075:14)
+    at emitOne (events.js:116:13)
+    at Parser.emit (events.js:211:7)
+    at Parser.parser.on.token (E:\webapp-2019\weixin-server\node_modules\tedious\lib\token\token-stream-parser.js:37:14)
+    at emitOne (events.js:116:13)
+    at Parser.emit (events.js:211:7)
+    at addChunk (E:\webapp-2019\weixin-server\node_modules\readable-stream\lib\_stream_readable.js:298:12)
+    at readableAddChunk (E:\webapp-2019\weixin-server\node_modules\readable-stream\lib\_stream_readable.js:280:11)
+    at Parser.Readable.push (E:\webapp-2019\weixin-server\node_modules\readable-stream\lib\_stream_readable.js:241:10)
+    at Parser.Transform.push (E:\webapp-2019\weixin-server\node_modules\readable-stream\lib\_stream_transform.js:139:32)
+    at Parser.afterTransform (E:\webapp-2019\weixin-server\node_modules\readable-stream\lib\_stream_transform.js:88:10)
+    at Parser._transform (E:\webapp-2019\weixin-server\node_modules\tedious\lib\token\stream-parser.js:88:14)
+    at Parser.Transform._read (E:\webapp-2019\weixin-server\node_modules\readable-stream\lib\_stream_transform.js:177:10)
+    at Parser.Transform._write (E:\webapp-2019\weixin-server\node_modules\readable-stream\lib\_stream_transform.js:164:83)
+    at doWrite (E:\webapp-2019\weixin-server\node_modules\readable-stream\lib\_stream_writable.js:409:139)
+    at writeOrBuffer (E:\webapp-2019\weixin-server\node_modules\readable-stream\lib\_stream_writable.js:398:5)
+    at Parser.Writable.write (E:\webapp-2019\weixin-server\node_modules\readable-stream\lib\_stream_writable.js:307:11)
+  name: 'SequelizeDatabaseError',
+  parent: 
+   { RequestError: Conversion failed when converting date and/or time from character string.
+    at Parser.tokenStreamParser.on.token (E:\webapp-2019\weixin-server\node_modules\tedious\lib\connection.js:842:27)
+    at emitOne (events.js:116:13)
+    at Parser.emit (events.js:211:7)
+    at Parser.parser.on.token (E:\webapp-2019\weixin-server\node_modules\tedious\lib\token\token-stream-parser.js:37:14)
+    at emitOne (events.js:116:13)
+    at Parser.emit (events.js:211:7)
+    at addChunk (E:\webapp-2019\weixin-server\node_modules\readable-stream\lib\_stream_readable.js:298:12)
+    at readableAddChunk (E:\webapp-2019\weixin-server\node_modules\readable-stream\lib\_stream_readable.js:280:11)
+    at Parser.Readable.push (E:\webapp-2019\weixin-server\node_modules\readable-stream\lib\_stream_readable.js:241:10)
+    at Parser.Transform.push (E:\webapp-2019\weixin-server\node_modules\readable-stream\lib\_stream_transform.js:139:32)
+    at doneParsing (E:\webapp-2019\weixin-server\node_modules\tedious\lib\token\stream-parser.js:122:14)
+    at data (E:\webapp-2019\weixin-server\node_modules\tedious\lib\token\infoerror-token-parser.js:48:5)
+    at call.lineNumber (E:\webapp-2019\weixin-server\node_modules\tedious\lib\token\infoerror-token-parser.js:21:19)
+    at awaitData (E:\webapp-2019\weixin-server\node_modules\tedious\lib\token\stream-parser.js:221:7)
+    at Parser.awaitData (E:\webapp-2019\weixin-server\node_modules\tedious\lib\token\stream-parser.js:145:7)
+    at Parser.readUInt32LE (E:\webapp-2019\weixin-server\node_modules\tedious\lib\token\stream-parser.js:218:10)
+    at parser.readBVarChar.procName (E:\webapp-2019\weixin-server\node_modules\tedious\lib\token\infoerror-token-parser.js:20:90)
+    at readBuffer.data (E:\webapp-2019\weixin-server\node_modules\tedious\lib\token\stream-parser.js:379:9)
+    at awaitData (E:\webapp-2019\weixin-server\node_modules\tedious\lib\token\stream-parser.js:371:7)
+    at Parser.awaitData (E:\webapp-2019\weixin-server\node_modules\tedious\lib\token\stream-parser.js:145:7)
+    at Parser.readBuffer (E:\webapp-2019\weixin-server\node_modules\tedious\lib\token\stream-parser.js:368:10)
+    at readUInt8.length (E:\webapp-2019\weixin-server\node_modules\tedious\lib\token\stream-parser.js:378:12)
+     message: 'Conversion failed when converting date and/or time from character string.',
+     code: 'EREQUEST',
+     number: 241,
+     state: 1,
+     class: 16,
+     serverName: 'QSC1701-0009',
+     procName: '',
+     lineNumber: 1,
+     sql: 'INSERT INTO [userinfo] ([id],[corpid],[coprsecret],[access_token],[access_token_expire],[jsapi_ticket],[jsapi_ticket_expire],[createdAt],[updatedAt]) OUTPUT INSERTED.* VALUES (@0,@1,@2,@3,@4,@5,@6,@7,@8);',
+     parameters: 
+      { '0': 1,
+        '1': 'dfsdfafda',
+        '2': 'sdfsadfsa',
+        '3': 'kjkij',
+        '4': 'new Date().getTime()',
+        '5': 'ksdfjksljkj',
+        '6': 'new Date().getTime()',
+        '7': '2020-04-08 08:46:25.017 +00:00',
+        '8': '2020-04-08 08:46:25.017 +00:00' } },
+  original: 
+   { RequestError: Conversion failed when converting date and/or time from character string.
+    at Parser.tokenStreamParser.on.token (E:\webapp-2019\weixin-server\node_modules\tedious\lib\connection.js:842:27)
+    at emitOne (events.js:116:13)
+    at Parser.emit (events.js:211:7)
+    at Parser.parser.on.token (E:\webapp-2019\weixin-server\node_modules\tedious\lib\token\token-stream-parser.js:37:14)
+    at emitOne (events.js:116:13)
+    at Parser.emit (events.js:211:7)
+    at addChunk (E:\webapp-2019\weixin-server\node_modules\readable-stream\lib\_stream_readable.js:298:12)
+    at readableAddChunk (E:\webapp-2019\weixin-server\node_modules\readable-stream\lib\_stream_readable.js:280:11)
+    at Parser.Readable.push (E:\webapp-2019\weixin-server\node_modules\readable-stream\lib\_stream_readable.js:241:10)
+    at Parser.Transform.push (E:\webapp-2019\weixin-server\node_modules\readable-stream\lib\_stream_transform.js:139:32)
+    at doneParsing (E:\webapp-2019\weixin-server\node_modules\tedious\lib\token\stream-parser.js:122:14)
+    at data (E:\webapp-2019\weixin-server\node_modules\tedious\lib\token\infoerror-token-parser.js:48:5)
+    at call.lineNumber (E:\webapp-2019\weixin-server\node_modules\tedious\lib\token\infoerror-token-parser.js:21:19)
+    at awaitData (E:\webapp-2019\weixin-server\node_modules\tedious\lib\token\stream-parser.js:221:7)
+    at Parser.awaitData (E:\webapp-2019\weixin-server\node_modules\tedious\lib\token\stream-parser.js:145:7)
+    at Parser.readUInt32LE (E:\webapp-2019\weixin-server\node_modules\tedious\lib\token\stream-parser.js:218:10)
+    at parser.readBVarChar.procName (E:\webapp-2019\weixin-server\node_modules\tedious\lib\token\infoerror-token-parser.js:20:90)
+    at readBuffer.data (E:\webapp-2019\weixin-server\node_modules\tedious\lib\token\stream-parser.js:379:9)
+    at awaitData (E:\webapp-2019\weixin-server\node_modules\tedious\lib\token\stream-parser.js:371:7)
+    at Parser.awaitData (E:\webapp-2019\weixin-server\node_modules\tedious\lib\token\stream-parser.js:145:7)
+    at Parser.readBuffer (E:\webapp-2019\weixin-server\node_modules\tedious\lib\token\stream-parser.js:368:10)
+    at readUInt8.length (E:\webapp-2019\weixin-server\node_modules\tedious\lib\token\stream-parser.js:378:12)
+     message: 'Conversion failed when converting date and/or time from character string.',
+     code: 'EREQUEST',
+     number: 241,
+     state: 1,
+     class: 16,
+     serverName: 'QSC1701-0009',
+     procName: '',
+     lineNumber: 1,
+     sql: 'INSERT INTO [userinfo] ([id],[corpid],[coprsecret],[access_token],[access_token_expire],[jsapi_ticket],[jsapi_ticket_expire],[createdAt],[updatedAt]) OUTPUT INSERTED.* VALUES (@0,@1,@2,@3,@4,@5,@6,@7,@8);',
+     parameters: 
+      { '0': 1,
+        '1': 'dfsdfafda',
+        '2': 'sdfsadfsa',
+        '3': 'kjkij',
+        '4': 'new Date().getTime()',
+        '5': 'ksdfjksljkj',
+        '6': 'new Date().getTime()',
+        '7': '2020-04-08 08:46:25.017 +00:00',
+        '8': '2020-04-08 08:46:25.017 +00:00' } },
+  sql: 'INSERT INTO [userinfo] ([id],[corpid],[coprsecret],[access_token],[access_token_expire],[jsapi_ticket],[jsapi_ticket_expire],[createdAt],[updatedAt]) OUTPUT INSERTED.* VALUES (@0,@1,@2,@3,@4,@5,@6,@7,@8);',
+  parameters: 
+   { '0': 1,
+     '1': 'dfsdfafda',
+     '2': 'sdfsadfsa',
+     '3': 'kjkij',
+     '4': 'new Date().getTime()',
+     '5': 'ksdfjksljkj',
+     '6': 'new Date().getTime()',
+     '7': '2020-04-08 08:46:25.017 +00:00',
+     '8': '2020-04-08 08:46:25.017 +00:00' } }

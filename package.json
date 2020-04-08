@@ -1,0 +1,24 @@
+{
+  "name": "weixin-server",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "co": "^4.6.0",
+    "koa": "^2.11.0",
+    "koa-bodyparser": "^4.3.0",
+    "koa-simple-router": "^0.2.0",
+    "koa-swig": "^2.2.1",
+    "log4js": "^6.1.2",
+    "node-fetch": "^2.6.0",
+    "sequelize": "^5.21.6",
+    "sha1": "^1.1.1",
+    "tedious": "^8.2.0"
+  }
+}

@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>企业微信设置页</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@3.3.7/dist/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+</head>
+<body>
+  <div id="app" class="container">
+    <div class="form-group">
+      <label for="corpid">CorpID</label>
+      <input name="corpid" class="form-control" type="text" v-model="corpid"/>
+    </div>
+    <div class="form-group">
+      <label for="corpsecret">CorpSecret</label>
+      <input name="corpsecret" class="form-control" type="text" v-model="corpsecret"/>
+    </div>
+    <div class="form-group">
+      <label for="redirectUri">redirect_uri</label>
+      <input name="redirectUri" class="form-control" type="text" v-model="redirectUri"/>
+    </div>
+    <div class="row">
+      <button class="btn btn-primary" @click="getUrl">生成跳转链接</button>
+    </div>
+    <div class="row">{{url}}</div>
+    <div class="row">
+      <button class="btn btn-primary" @click="getAccessToken">获取access_token</button>
+    </div>
+    <div class="row">{{access_token}}</div>
+  </div>
+  <script src="https://cdn.jsdelivr.net/npm/vue@2.6.11"></script>
+  <script>
+    var app = new Vue({
+      el: '#app',
+      data: {
+        corpid: 'wwb06dea62541c2623',
+        corpsecret: 'DI5WIHBqlkca_8Mm5FEpA8YwiWIG8Rwc9T0F2LqgQIs',
+        redirectUri: 'http://kismob.kingdee.com',
+        url: '',
+        access_token: ''
+      },
+      methods: {
+        getUrl() {
+          if(this.corpid && this.redirectUri){
+            this.url = `https://open.weixin.qq.com/connect/oauth2/authorize?appid=${this.corpid}&redirect_uri=${encodeURIComponent(this.redirectUri)}&response_type=code&scope=snsapi_base&state=STATE#wechat_redirect`;
+          }
+        },
+        getAccessToken() {
+          if(this.corpid && this.corpsecret){
+            const url = `http://localhost:8888/weixinwork/getAccessToken?corpid=${this.corpid}&corpsecret=${this.corpsecret}`;
+            fetch(url).then(res => {
+              console.log(res);
+              this
+            });
+          }
+        },
+      }
+    })
+  </script>
+</body>
+</html>
