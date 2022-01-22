@@ -16,7 +16,7 @@
     "koa-simple-router": "^0.2.0",
     "koa-swig": "^2.2.1",
     "log4js": "^6.1.2",
-    "node-fetch": "^2.6.0",
+    "node-fetch": "^3.1.1",
     "sequelize": "^5.21.6",
     "sha1": "^1.1.1",
     "tedious": "^8.2.0"
